@@ -1,0 +1,79 @@
+/* src/components/Header.css */
+.app-header {
+  background-color: #343a40; /* Darker header */
+  color: white;
+  padding: 15px 30px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between; /* Space out title and nav */
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+}
+
+.app-header .logo-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 25px; /* More space between links */
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list li a {
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+  padding: 5px 0;
+  position: relative; /* For underline effect */
+}
+
+.nav-list li a:hover {
+  color: #add8e6; /* Lighter blue on hover */
+  text-decoration: none;
+}
+
+.nav-list li a::after { /* Underline effect */
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #61dafb; /* React blue */
+    transition: width 0.3s ease-in-out;
+}
+
+.nav-list li a:hover::after,
+.nav-list li a.active::after { /* Active link style */
+    width: 100%;
+}
+
+.auth-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.auth-actions span {
+    color: #e0e0e0;
+    font-weight: 500;
+}
+
+.auth-actions button {
+    background-color: #dc3545; /* Red for logout */
+    padding: 8px 15px;
+    font-size: 0.9rem;
+}
+
+.auth-actions button:hover {
+    background-color: #c82333;
+}
