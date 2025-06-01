@@ -4,7 +4,6 @@
 This project is a **RESTful backend service** for a library management system, built using **ASP.NET Core**. It provides endpoints for managing books, borrowers, and loan transactions.
 
 ## Team/Contributors
-Please fill in the names, IDs, and contributions of your team members below:
 
 | Name | ID | Contribution |
 |------|----|-------------|
@@ -28,10 +27,7 @@ Please fill in the names, IDs, and contributions of your team members below:
 - Postman (optional for testing API endpoints)
 
 ### Steps:
-1. Clone the repository:
-   ```sh
-   git clone https://github.com/your-username/your-repo-name.git
-   cd your-repo-name
+
 Authentication
 Method	Endpoint	Description
 POST	/api/auth/register	Register a new user
@@ -53,36 +49,4 @@ Method	Endpoint	Description
 POST	/api/loans	Issue a book to a borrower
 POST	/api/returns	Return a borrowed book
 GET	/api/loans/overdue	List all currently overdue loans
-Usage
-Once the API is running, you can interact with it using tools like Postman, Insomnia, or by integrating it with a front-end application.
 
-Example: Registering a user with Postman
-Method: POST URL: https://localhost:7211/swagger Body (raw, JSON):
-
-json
-{
-  "username": "admin",
-  "password": "admin123"
-}
-Example: Getting all books (after authentication)
-First, POST to /api/auth/login to get a JWT.
-
-Then, make a GET request to https://localhost:3000/api/books.
-
-Include the JWT in the Authorization header as a Bearer token:
-
-Authorization: Bearer <token>
-Contributing
-Contributions are welcome! Please follow these steps:
-
-Fork the repository.
-
-Create a new branch (git checkout -b feature/your-feature-name).
-
-Make your changes.
-
-Commit your changes (git commit -m "Add new feature").
-
-Push to the branch (git push origin feature/your-feature-name).
-
-Open a Pull Request.
