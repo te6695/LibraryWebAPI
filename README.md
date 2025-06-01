@@ -3,11 +3,14 @@
  Overview
 This project is a RESTful backend service for a library management system, built using **ASP.NET Core**. It provides endpoints for managing books, borrowers, and loan transactions.
 
- Team Members
- name                      Id
-- [Tesfu Habtewold]  1501501
-- [Addisu Guche]    
-- [Ftalew Abate]
+ Team Members(colaborations)
+ name                      
+- 1Tesfu Habtewold               1501501                        
+- 2.Addisu Guche                  1500959
+-3.samrawit                      1501442
+-4.Bisrat Endalew                1401063
+-5.Ftalew  Abate                 1501210
+  
 
  Learning Objectives
 - Implement event-driven and asynchronous patterns in **ASP.NET Core Web API**.
