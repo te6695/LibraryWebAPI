@@ -8,11 +8,11 @@ Please fill in the names, IDs, and contributions of your team members below:
 
 | Name | ID | Contribution |
 |------|----|-------------|
-| [Contributor Name 1] | [ID 1] | [Contribution 1] |
-| [Contributor Name 2] | [ID 2] | [Contribution 2] |
-| [Contributor Name 3] | [ID 3] | [Contribution 3] |
-| [Contributor Name 4] | [ID 4] | [Contribution 4] |
-| [Contributor Name 5] | [ID 5] | [Contribution 5] |
+| [Tesfu H/wold] | [1501501] | [all] |
+| [Addisu Guche          1500959] |all
+| [samrawit G/tensay] | [1501442] | [all] |
+| [Ftalew Abate] | [1501210] | [all] |
+| [Bisrat] | [1401063] | [all] |
 
 ## Learning Objectives
 - Implement **event-driven and asynchronous** patterns in **ASP.NET Core Web API**.
@@ -57,7 +57,7 @@ Usage
 Once the API is running, you can interact with it using tools like Postman, Insomnia, or by integrating it with a front-end application.
 
 Example: Registering a user with Postman
-Method: POST URL: https://localhost:5001/api/auth/register Body (raw, JSON):
+Method: POST URL: https://localhost:7211/swagger Body (raw, JSON):
 
 json
 {
@@ -71,7 +71,7 @@ Then, make a GET request to https://localhost:5001/api/books.
 
 Include the JWT in the Authorization header as a Bearer token:
 
-Authorization: Bearer <your_jwt_token>
+Authorization: Bearer <token>
 Contributing
 Contributions are welcome! Please follow these steps:
 
