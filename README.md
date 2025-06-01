@@ -12,7 +12,7 @@ Please fill in the names, IDs, and contributions of your team members below:
 | [Addisu Guche   |1500959       |all
 | [samrawit G/tensay] | [1501442] | [all] |
 | [Ftalew Abate] | [1501210] | [all] |
-| [Bisrat] | [1401063] | [all] |
+| [Bisrat Endalew] | [1401063] | [all] |
 
 ## Learning Objectives
 - Implement **event-driven and asynchronous** patterns in **ASP.NET Core Web API**.
