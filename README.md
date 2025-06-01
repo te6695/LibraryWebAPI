@@ -32,3 +32,57 @@ Please fill in the names, IDs, and contributions of your team members below:
    ```sh
    git clone https://github.com/your-username/your-repo-name.git
    cd your-repo-name
+Authentication
+Method	Endpoint	Description
+POST	/api/auth/register	Register a new user
+POST	/api/auth/login	Login and receive JWT
+Books API
+Method	Endpoint	Description
+GET	/api/books	List all books
+GET	/api/books/{id}	Retrieve a specific book by ID
+POST	/api/books	Add a new book
+PUT	/api/books/{id}	Update details of an existing book by ID
+DELETE	/api/books/{id}	Remove a book by ID
+Borrowers API
+Method	Endpoint	Description
+GET	/api/borrowers	List all borrowers
+POST	/api/borrowers	Add a new borrower
+GET	/api/borrowers/{id}	Get details of a specific borrower by ID
+Loans API
+Method	Endpoint	Description
+POST	/api/loans	Issue a book to a borrower
+POST	/api/returns	Return a borrowed book
+GET	/api/loans/overdue	List all currently overdue loans
+Usage
+Once the API is running, you can interact with it using tools like Postman, Insomnia, or by integrating it with a front-end application.
+
+Example: Registering a user with Postman
+Method: POST URL: https://localhost:5001/api/auth/register Body (raw, JSON):
+
+json
+{
+  "username": "admin",
+  "password": "admin123"
+}
+Example: Getting all books (after authentication)
+First, POST to /api/auth/login to get a JWT.
+
+Then, make a GET request to https://localhost:5001/api/books.
+
+Include the JWT in the Authorization header as a Bearer token:
+
+Authorization: Bearer <your_jwt_token>
+Contributing
+Contributions are welcome! Please follow these steps:
+
+Fork the repository.
+
+Create a new branch (git checkout -b feature/your-feature-name).
+
+Make your changes.
+
+Commit your changes (git commit -m "Add new feature").
+
+Push to the branch (git push origin feature/your-feature-name).
+
+Open a Pull Request.
