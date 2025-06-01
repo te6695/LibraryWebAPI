@@ -25,28 +25,28 @@ Installation & Setup
 Install dependencies:
 dotnet restore
 
-Apply database migrations:
+-Apply database migrations:
 dotnet ef database update
 Run the project:
-dotnet run
+-dotnet run
 API Endpoints
-Authentication
-Method	Endpoint	Description
-POST	/api/auth/register	Register a new user
-POST	/api/auth/login	Login & receive JWT
-                Books API
-Method	Endpoint	Description
+-Authentication
+-Method	Endpoint	Description
+.POST	/api/auth/register	Register a new user
+.POST	/api/auth/login	Login & receive JWT
+                .Books API
+.Method	Endpoint	Description
 GET	/api/books	List all books
 GET	/api/books/{id}	Retrieve a book
 POST	/api/books	Add a book
 PUT	/api/books/{id}	Update book details
 DELETE	/api/books/{id}	Remove a book
-                Borrowers API
+                .Borrowers API
 Method	Endpoint	Description
 GET	/api/borrowers	List all borrowers
 POST	/api/borrowers	Add a borrower
 GET	/api/borrowers/{id}	Get borrower details
-Loans API
+               .Loans API
 Method	Endpoint	Description
 POST	/api/loans	Issue a book
 POST	/api/returns	Return a book
