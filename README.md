@@ -9,7 +9,7 @@ Please fill in the names, IDs, and contributions of your team members below:
 | Name | ID | Contribution |
 |------|----|-------------|
 | [Tesfu H/wold] | [1501501] | [all] |
-| [Addisu Guche          1500959] |all
+| [Addisu Guche   |1500959       |all
 | [samrawit G/tensay] | [1501442] | [all] |
 | [Ftalew Abate] | [1501210] | [all] |
 | [Bisrat] | [1401063] | [all] |
@@ -67,7 +67,7 @@ json
 Example: Getting all books (after authentication)
 First, POST to /api/auth/login to get a JWT.
 
-Then, make a GET request to https://localhost:5001/api/books.
+Then, make a GET request to https://localhost:3000/api/books.
 
 Include the JWT in the Authorization header as a Bearer token:
 
