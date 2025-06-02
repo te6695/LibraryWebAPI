@@ -50,3 +50,67 @@ POST	/api/loans	Issue a book to a borrower
 POST	/api/returns	Return a borrowed book
 GET	/api/loans/overdue	List all currently overdue loans
 
+
+
+
+===>Here's a clear step-by-step guide to run your full-stack application (both backend and frontend):
+
+1. Run the Backend (ASP.NET Core API)
+Option A: Using Visual Studio
+Open LibrarySolution.sln in Visual Studio
+
+Right-click the LibraryWebAPI project → Set as Startup Project
+
+Press F5 or the green "Run" button (uses HTTPS)
+
+Check it's running at: https://localhost:5001 (or http://localhost:7211)
+
+Option B: Using Command Line
+bash
+cd <directory>
+dotnet run
+Runs on http://localhost:7211 for me /other
+
+2. Run the Frontend (React App)
+In a NEW terminal window:
+bash
+cd <directory>
+
+npm start
+Automatically opens http://localhost:3000
+
+3. Verify Both Are Running
+Component	URL	How to Check
+Backend	http://localhost:7211	Visit /api/books in browser
+Frontend	http://localhost:3000	Should show login page
+4. Troubleshooting
+If backend fails:
+Check database connection in appsettings.json:
+
+json
+"ConnectionStrings": {
+  "DefaultConnection": "Server=servername;Database=databasename;Trusted_Connection=True;TrustServerCertificate=true;"
+}
+Apply migrations:
+
+bash
+dotnet ef database update
+If frontend fails to connect:
+Check library-client/src/api/api.js:
+
+javascript
+const API_URL = 'http://localhost:7211/api';  // Must match backend URL
+5. Default Login Credentials
+Use these to test:
+
+Username: admin
+
+Password: Admin123
+
+Key Notes:
+Run both simultaneously (backend first, then frontend)
+
+Different terminals - One for backend, one for frontend
+
+First-time setup requires npm install and dotnet restore
+
